@@ -22,7 +22,6 @@ def allowed_file(filename):
 
 model = load_model('./model.h5',compile=False)#学習済みモデルをロード
 
-
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
