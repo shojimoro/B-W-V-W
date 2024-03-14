@@ -1,13 +1,14 @@
 import os
-import cv2
 import numpy as np
-
 from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.preprocessing import image
 
+import cv2
 from tensorflow.keras.layers import Dense, Dropout, Flatten, Input
+
+
 
 classes = ["BENTONITE","WIRE","VINYL","WOOD"]
 image_size = 150
@@ -53,5 +54,4 @@ def upload_file():
     return render_template("index.html",answer="")
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 8080))
-    app.run(host ='0.0.0.0',port = port)
+    app.run()
