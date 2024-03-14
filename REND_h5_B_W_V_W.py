@@ -8,8 +8,6 @@ from tensorflow.keras.preprocessing import image
 import cv2
 from tensorflow.keras.layers import Dense, Dropout, Flatten, Input
 
-
-
 classes = ["BENTONITE","WIRE","VINYL","WOOD"]
 image_size = 150
 
