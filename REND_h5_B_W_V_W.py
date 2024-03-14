@@ -6,7 +6,6 @@ from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.preprocessing import image
-
 from tensorflow.keras.layers import Dense, Dropout, Flatten, Input
 
 classes = ["BENTONITE","WIRE","VINYL","WOOD"]
